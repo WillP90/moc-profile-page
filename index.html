@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="script/script.js" defer></script>
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Start of Nav Bar Element -->
+        <div class="navBar">
+            <p class="navTitle">Profile</p>
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button class="signOutBtn">Sign Out</button></li>
+            </ul>
+        </div>
+        <!-- End of Nav Bar Element -->
+
+        <!-- Start of Main Page Content -->
+        <div class="pageContent">
+
+            <!-- Start Of the First(Left) Column -->
+            <div class="pageCol1">
+
+                <!-- Start of User Card -->
+                <div class="userCard">
+                    <div class="userInfo">
+                        <img src="img/user-circle.png" alt="" class="profilePic">
+                        <p class="profileName">Jane Doe</p>    
+                    </div>
+                    <div class="userLocation">
+                        <img src="img/map-marker.png" alt="" class="navPic">
+                        <p class="locationTitle">Seattle</p>
+                    </div>
+                    <div class="otherInfo">
+                        <p class="stuff">Developer | Engineer | Problem Solver</p>
+                        <p class="stuff">Master of shadows and the Internet!</p>
+                    </div>
+                    <div class="editSettings">
+                        <img src="img/gear.png" alt="" class="settingsImg">
+                        <a href="#" class="settingsLink" onclick="switchName()">edit profile</a>
+                    </div>
+                </div>
+
+                <!-- Start of Education Card -->
+                <div class="educationCard">
+                    <p class="educationCardTitle">Education</p>
+                    <div class="schoolInfo">
+                        <p class="schoolName">Coding Dojo - Full Stack Bootcamp</p>
+                        <p class="attendDates">Dec 2019 - Mar 2020</p>
+                    </div>
+                    <p class="skills">Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+            <!-- End of the First Column -->
+
+            <!-- Start of the Second(Right) Column -->
+            <div class="pageCol2">
+
+                <!-- Start of the Connection Requests -->
+                <div class="connectReqs">
+                    <div class="titleStuff">
+                        <p class="connectNum">2</p>
+                        <p class="connectTitle">Connection Requests</p>
+                    </div>
+                    <div class="requestInfo">
+                        <div id="requesterInfo" class="requesterDelete0">
+                            <img src="img/todd-s.jpg" alt="frickenTodd" class="requesterPic">
+                            <p class="requesterName">Todd E</p>
+                            <img src="img/accept-circle.png" alt="" class="checkMark" onclick = "acceptReq(0)">
+                            <img src="img/close-circle.png" alt="" class="xMark" onclick="rejectReq(0)">
+                        </div>
+                        <div id="requesterInfo" class="requesterDelete1">
+                            <img src="img/phil-s.jpg" alt="frickenPhil" class="requesterPic">
+                            <p class="requesterName">Phil K</p>
+                            <img src="img/accept-circle.png" alt="" class="checkMark" onclick="acceptReq(1)">
+                            <img src="img/close-circle.png" alt="" class="xMark" onclick="rejectReq(1)">
+                        </div>
+                    </div>
+                </div>
+                <!-- End of the Connection Requests -->
+
+                <!-- Start of Your Connections -->
+                <div class="yourConnects">
+                    <div class="titleStuff">
+                        <p class="yourConnectNum">500+</p>
+                        <p class="connectTitle">Your Connections</p>
+                    </div>
+                    <div class="connectInfo">
+                        <img src="img/adrien-s.jpg" alt="adrien" class="connectPic">
+                        <p class="connectName">Adrien D</p>
+                    </div>
+                    <div class="connectInfo">
+                        <img src="img/anne-s.jpg" alt="anne" class="connectPic">
+                        <p class="connectName">Anne J</p>
+                    </div>
+                    <div class="connectInfo">
+                        <img src="img/alayne-s.jpg" alt="alayne" class="connectPic">
+                        <p class="connectName">Alayne T</p>
+                    </div>
+                    <div class="connectInfo">
+                        <img src="img/arry-s.jpg" alt="arry" class="connectPic">
+                        <p class="connectName">Arry Y</p>
+                    </div>  
+                    <a href="#" class="moreConnects">View More</a>
+                </div>
+                <!-- End of Your Connections -->
+            </div>
+            <!-- End of The Second Column -->
+        </div>
+        <!-- End of Main Page Content -->
+    </div>
+</body>
+</html>

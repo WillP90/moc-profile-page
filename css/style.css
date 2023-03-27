@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 800px;
+}
+
+/* Style for Nav Bar Element */
+.navBar{
+    padding: 10px;
+    height: 35px;
+    width: 800px;
+    background-color: rgb(42, 47, 50);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navTitle{
+    margin-left: 100px;
+    color: whitesmoke;
+    font-family: 'Roboto', serif;
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.navLinks{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.signOutBtn{
+    margin-left: 100px;
+    padding: 3px 8px;
+    background-color: rgb(49, 160, 197);
+    color: white;
+    box-shadow: 4px 2px 2px black;
+}
+
+.active{
+    font-weight: 300;
+    color: whitesmoke;
+}
+
+.navLinks li{
+    margin-left: 15px;
+}
+
+.navLinks a{
+    text-decoration: none;
+    font-family: 'Roboto', serif;
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+}
+/* End Nav Bar Style */
+
+.pageContent{
+    display: flex;
+}
+
+/* Start of Column 1 Style */
+
+.pageCol1{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex: 2;
+}
+
+
+/* Start of User Card Style */
+.userCard{
+    border: 2px solid grey;
+    height: 270px;
+    width: 350px;
+    margin-left: 40px;   
+}
+
+.userInfo{
+    background-color: darkcyan;
+    height: 25px;
+    padding: 25px;
+}
+
+.profilePic{
+    margin-top: 10px;
+    height: 70px;
+    border: 4px solid lightgrey;
+    border-radius: 50%;
+}
+
+.profileName{
+    font-family: Comic Sans MS, Comic Sans, cursive; 
+    font-size: 25px;
+    font-weight: 800;    
+}
+
+.userLocation{
+    padding-top: 85px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.navPic{
+    height: 18px;
+}
+
+.locationTitle{
+    margin-left: 10px;
+    font-family: Comic Sans MS, Comic Sans, cursive; 
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.otherInfo{
+    padding-top: 10px;
+    padding-left: 25px;
+}
+
+.stuff{
+    font-family: Comic Sans MS, Comic Sans, cursive; 
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.editSettings{
+    margin-left: 25px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.settingsImg{
+    height: 15px;
+}
+
+.settingsLink{
+    padding-left: 10px;
+}
+/* End User Card Style */
+
+/* Start Style for Education Card */
+.educationCard{
+    border: 2px solid grey;
+    height: 125px;
+    width: 350px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.educationCardTitle{
+    background-color: darkslategrey;
+    color: white;
+    height: 20px;
+    padding: 5px;
+}
+
+.schoolName{
+    font-family: 'Roboto', serif;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.attendDates{
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    color: dimgray;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-weight: 400; 
+}
+
+.skills{
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 600; 
+}
+/* End of Education Card Style */
+/* End of Column 1 Style */
+
+/* Start of Column 2 Style */
+.pageCol2{
+    margin-top: 30px;
+    margin-right: 100px;
+    flex: 1;
+}
+
+/* Start of Connection Requests Style */
+.connectReqs{
+    border: 2px solid grey;
+    height: 130px;
+    width: 200px;
+}
+
+.titleStuff{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkslategrey;
+    height: 40px;
+}
+
+.connectNum{
+    padding: 5px;
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    height: 13px;
+    width: auto;
+    background-color: lightgray;
+    border-radius: 50%;
+
+}
+
+.connectTitle{
+    font-family: 'Roboto', serif;
+    color: white;
+    font-size: 15px;
+}
+
+#requesterInfo{
+    display: flex;
+    align-items: center;
+}
+
+.requesterPic{
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    flex: 1;
+}
+
+.requesterName{
+    padding: 5px;
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    font-weight: 600;
+    flex: 5;
+}
+
+.checkMark{
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.xMark{
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+/* Start Your Connections Style */
+
+.yourConnects{
+    border: 2px solid grey;
+    height: 250px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.yourConnectNum{
+    padding: 5px;
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    height: 13px;
+    width: auto;
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.connectInfo{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.connectPic{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+.connectName{
+    margin-left: 10px;
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.moreConnects{
+    border-top: 2px solid grey;
+    padding: 5px;
+}
